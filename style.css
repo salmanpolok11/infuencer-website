@@ -87,12 +87,27 @@ ul li a {
 
 
 @media screen and (max-width:576px) {
-
+  
+  body{
+     width: 80%;
+    height: 90%; */
+  }
   .nav-containar,
   .bannar-section{
     flex-direction: column;
-    margin: 10px;
-    padding: 10px;
+     margin: 10px;
+    padding: 10px; 
+  }
+  .nav-containar{
+     padding-left: 40px;
+
+  }
+  .nav-content{
+    margin: 0;
+    padding: 0;
+  }
+  .nav-logo{
+    margin-right: 0;
   }
 
   .bannar-title{
@@ -112,15 +127,20 @@ ul li a {
   
 }
 
-@media screen and (min-width:960px) and (max-width:576px) {
+@media screen and (min-width:576px) and (max-width:930px) {
+
+  body{
+    width: 100%;
+    height: 100%;
+  }
   .nav-containar,
   .bannar-section{
     flex-direction: column;
     margin: 0;
     padding: 0;
   }
-  .bannar-img-content{
+  .bannar-img-content  {
     background-image: none; 
 }
 
-}
+} */
