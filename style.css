@@ -97,10 +97,11 @@ ul li a {
 
   /* main releted style */
 
-  main{
-    width: 1440px;
-    height: 3306px;
+  .main{
+    max-width:1440px;
+    height: 100%;
     margin: 0 auto ;
+    margin-bottom: 0;
   }
 
 .collection{
@@ -108,6 +109,7 @@ ul li a {
   grid-template-columns: repeat(3,1fr);
   gap: 30px;
   margin: 0 auto;
+  margin-bottom: 200px;
 } 
 
 .collection-card img {
@@ -115,10 +117,10 @@ ul li a {
 }
 
 .collection-card{
-  padding-left:20px ;
+ padding:20px ;
   border-radius: 5px;
 background: #FFF;
-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15); */
 }
 
 
@@ -150,56 +152,135 @@ letter-spacing: 0.252px;
   color: orangered;
 }
 
+/* last style */
+
+.last-containar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 96px;
+}
+
+.last-title{
+  color: #0A0826;
+font-size: 38px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
+margin: 0;
+}
+
+.last-des{color: #6C6C6C;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+/* footer releted style */
+
+.footer{
+  width: 100%;
+  height: 60%;
+  background: #0A0826;
+  margin-top: 60px; 
+  text-align: center;
+  padding-top: 40px;
+}
+.footer-title{
+  color: #FFF;
+font-size: 24px;
+font-weight: 700;
+margin: 0;
+}
+
+.footer-des{
+  color: var(--text-gray-300, #D9DBE1);
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 171.429% */
+margin: 0;
+
+}
+
+.fa-brands{
+  color: #FFFFFF;
+  width: 20px;
+  padding-bottom: 30px;
+}
 
 
 
 
 
 
+
+/* 
 @media screen and (max-width:576px) {
   
   body{
      width: 80%;
     height: 90%;
   }
+
   .nav-containar,
   .bannar-section,
-  .sponsor{
+  .sponsor,
+  .main
+  {
     flex-direction: column;
       margin: 10px;
-    padding: 10px; 
+     padding: 10px; 
   }
+  .main{
+    margin-top: 150% ;
+  }
+
+  .collection{
+       display: grid;
+       grid-template-rows: repeat(9,1fr);
+  }
+ 
 .sponsor{
-  gap:20px
+  gap:20px;
 }
+
   .nav-containar{
      padding-left: 40px;
 
   }
+
   .nav-content{
     margin: 0;
     padding: 0;
   }
+
   .nav-logo{
     margin-right: 0;
   }
+
 
   .bannar-title{
    width: 100%;
    height: 100%;
   }
+
   .bannar-des{
     width: 100%;
     height: 100%;
   }
+
   img{
     width: 100%;
   } 
 
    .bannar-img-content{
     background-image: none; 
-  
+} 
+
 }
+
 
 @media screen and (min-width:576px) and (max-width:930px) {
 
@@ -217,4 +298,4 @@ letter-spacing: 0.252px;
     background-image: none; 
 }
 
-} */
+} */ */
